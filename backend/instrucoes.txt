@@ -1,0 +1,21 @@
+Executar código backend
+terminal--> npm run start:dev
+
+=================================================================================================
+Após qualquer alteração no schema.prisma como alterar o banco de dados (para mongodb, ou sqlserver)
+terminal--> npx prisma generate
+
+=================================================================================================
+Após qualquer alteração no schema, que vá causar alteração no banco de dados
+terminal--> npx prisma migrate dev --name {nome}
+
+=================================================================================================
+Para criar um module, service ou controller para uma nova tabela no BD
+module
+terminal--> nest g module {nome}
+
+service
+terminal--> nest g controller {nome}
+
+controller
+terminal--> nest g controller {nome}
